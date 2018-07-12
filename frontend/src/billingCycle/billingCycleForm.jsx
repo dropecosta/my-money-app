@@ -4,12 +4,13 @@ import { reduxForm, Field } from 'redux-form'
 class BillingCycleForm extends Component {
 
     render() {
+        const { handleSubmit } = this.props
         return (
-            <form role='form'>
+            <form role='form' onSubmit={handleSubmit}>
                 <div className='box-body'>
-                    <field name='name' component='input' />
-                    <field name='month' component='input' />
-                    <field name='year' component='input' />
+                    <Field name='name' component='input' />
+                    <Field name='month' component='input' />
+                    <Field name='year' component='input' />
                 </div>
                 <div className='box-footer'>
                     <button type='submit' className='btn btn-primary'>Submit</button>
