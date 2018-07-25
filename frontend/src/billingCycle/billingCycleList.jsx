@@ -32,20 +32,19 @@ class BillingCycleList extends Component {
         
         return (
             <div>
-            <table className='table'>
-                <thead>
-                    <tr>
-                        <th>Nome</th>
-                        <th>Mês</th>
-                        <th>Ano</th>
-                        <th className='table-actions'>Ações</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {this.renderRows()}
-                </tbody>
-            </table>
-            
+                <table className='table'>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Mês</th>
+                            <th>Ano</th>
+                            <th className='table-actions'>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {this.renderRows()}
+                    </tbody>
+                </table>
             </div>
         )
 
